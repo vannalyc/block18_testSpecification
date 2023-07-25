@@ -1,0 +1,52 @@
+function should be named "concatOdds."
+The function should take two arrays of integers as input arguments.
+The function should return a single array containing only the odd numbers from both input arrays, sorted in ascending order.
+If there are duplicates of the same odd number in the input arrays, they should appear only once in the output array.
+Specifications for Tests:
+
+Test with regular inputs:
+Inputs: [3, 2, 1], [9, 1, 1, 1, 4, 15, -1]
+Expected output: [-1, 1, 3, 9, 15]
+Test with empty arrays:
+Inputs: [], []
+Expected output: []
+Test with arrays containing only even numbers:
+Inputs: [2, 4, 6, 8], [10, 12, 14]
+Expected output: []
+Test with arrays containing only odd numbers:
+Inputs: [1, 3, 5, 7], [9, 11, 13]
+Expected output: [1, 3, 5, 7, 9, 11, 13]
+Test with arrays containing a mix of odd and even numbers:
+Inputs: [2, 3, 6, 9, 10], [1, 4, 5, 7, 11]
+Expected output: [1, 3, 5, 7, 9, 11]
+Test with arrays containing negative odd numbers:
+Inputs: [-3, -1, -5], [-7, -9, -11]
+Expected output: [-11, -9, -7, -5, -3, -1]
+Test with arrays containing both positive and negative odd numbers:
+Inputs: [-3, 1, -5], [-7, 9, -11]
+Expected output: [-11, -7, -5, -3, 1, 9]
+Test with arrays containing large numbers:
+Inputs: [1000001, 1000003, 1000005], [999999, 1000007, 1000009]
+Expected output: [999999, 1000001, 1000003, 1000005, 1000007, 1000009]
+Test with arrays containing duplicate odd numbers:
+Inputs: [1, 2, 3, 3, 5, 5, 7], [7, 1, 5, 5, 9]
+Expected output: [1, 3, 5, 7, 9]
+Test with arrays containing only one odd number:
+Inputs: [3], [5]
+Expected output: [3, 5]
+Test with arrays containing no odd numbers:
+Inputs: [2, 4, 6], [8, 10]
+Expected output: []
+Test with arrays containing large number of elements:
+Inputs: [1, 3, 5] (100,000 elements), [3, 5, 7] (100,000 elements)
+Expected output: [1, 3, 5, 7]
+Test with non-integer inputs (should raise an error):
+Inputs: [1, 2, 3], ["a", "b", "c"]
+Expected output: Error
+Test with missing input (should raise an error):
+Inputs: [1, 2, 3]
+Expected output: Error
+Test with additional unexpected data types as inputs (e.g., lists, dictionaries) (should raise an error):
+Inputs: [1, 2, 3], {"a": 1, "b": 2}
+Expected output: Error
+The function should handle unexpected inputs gracefully and provide clear error indications in such cases.
