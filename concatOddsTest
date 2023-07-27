@@ -49,4 +49,3 @@ Expected output: Error
 Test with additional unexpected data types as inputs (e.g., lists, dictionaries) (should raise an error):
 Inputs: [1, 2, 3], {"a": 1, "b": 2}
 Expected output: Error
-The function should handle unexpected inputs gracefully and provide clear error indications in such cases.
